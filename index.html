@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             min-height: 100vh;
         }
 
@@ -26,7 +26,6 @@
             max-width: 800px;
             background-color: rgba(0, 0, 0, 0.8);
             box-shadow: 0 0 15px white;
-            margin-top: 20px;
         }
 
         .title {
@@ -41,100 +40,33 @@
             margin-bottom: 20px;
         }
 
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .pokemon-winners {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .pokemon-winners table {
-            width: 100%;
-            border-collapse: collapse;
-            color: white;
-        }
-
-        .pokemon-winners th, .pokemon-winners td {
-            border: 1px solid white;
-            padding: 8px;
-            text-align: center;
-        }
-
-        .pokemon-winners th {
-            background-color: #333;
-        }
-
-        .hall-of-fame-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hall-of-fame-list li {
-            margin: 10px 0;
-        }
-
-        .hall-of-fame-list a {
+        .hall-of-fame-link {
             color: #FFD700;
             text-decoration: none;
             font-size: 1.2em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
-        .hall-of-fame-list a:hover {
+        .hall-of-fame-link:hover {
             text-decoration: underline;
         }
 
-        .pokemon-icon {
-            width: 50px;
-            height: 50px;
-            image-rendering: pixelated;
+        .pokemon-image {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            border: 3px solid white;
+            box-shadow: 0 0 10px white;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">Pokémon Trainer</div>
+        
+        <a href="hall_of_fame.html" class="hall-of-fame-link">Visualizza la Hall of Fame</a>
+        <a href="pokemon_winners.html" class="hall-of-fame-link" style="display: block; margin-top: 10px;">Visualizza Pokémon Vincitori</a>
 
-        <div class="section pokemon-winners">
-            <h2>Pokémon Vincitori</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pokémon</th>
-                        <th>Vittorie</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Pikachu" class="pokemon-icon"> Raichu</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard" class="pokemon-icon"> Charizard</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" alt="Mewtwo" class="pokemon-icon"> Mewtwo</td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="section">
-            <div class="subtitle">Benvenuto nella tua avventura Pokémon! Scegli una Hall of Fame:</div>
-            <ul class="hall-of-fame-list">
-                <li><a href="hall_of_fame.html"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png" alt="Moltres" class="pokemon-icon"> Hall of Fame: 03/01/2025</a></li>
-                <li><a href="hall_of_fame_2.html"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" alt="Nidoking" class="pokemon-icon"> Hall of Fame: 06/01/2025</a></li>
-            </ul>
-        </div>
+        <img src="pokemon-master-trainer.jpg" alt="Pokémon Master Trainer" class="pokemon-image">
     </div>
 </body>
 </html>
