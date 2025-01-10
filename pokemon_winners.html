@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Vincitori</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            border: 3px solid white;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px white;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFD700;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        .pokemon-icon {
+            width: 50px;
+            height: 50px;
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Pokémon Vincitori</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pokémon</th>
+                    <th>Vittorie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard" class="pokemon-icon"> Charizard</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu" class="pokemon-icon"> Raichu</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" alt="Mewtwo" class="pokemon-icon"> Mewtwo</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
