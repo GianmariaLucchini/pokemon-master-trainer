@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala d'Onore - Pokémon</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .hall-of-fame {
+            text-align: center;
+            border: 3px solid white;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px white;
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .pokemon-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .pokemon {
+            background-color: black;
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pokemon img {
+            width: 80px;
+            height: 80px;
+            image-rendering: pixelated;
+        }
+
+        .pokemon-name {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .pokemon-level {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #FFD700;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        a {
+            color: #f00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="hall-of-fame">
+        <div class="title">Sala d'Onore</div>
+        <div class="pokemon-list">
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
+                <div class="pokemon-name">Venusaur</div>
+            </div>
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png" alt="Jolteon">
+                <div class="pokemon-name">Jolteon</div>
+                <div class="pokemon-level">Livello: 1</div>
+            </div>
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png" alt="Horsea">
+                <div class="pokemon-name">Horsea</div>
+                <div class="pokemon-level">Livello: 1</div>
+            </div>
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" alt="Arcanine">
+                <div class="pokemon-name">Arcanine</div>
+                <div class="pokemon-level">Livello: 1</div>
+            </div>
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" alt="Eevee">
+                <div class="pokemon-name">Eevee</div>
+                <div class="pokemon-level">Livello: 1</div>
+            </div>
+            <div class="pokemon">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png" alt="Articuno">
+                <div class="pokemon-name">Articuno</div>
+                <div class="pokemon-level">Livello: 3</div>
+            </div>
+        </div>
+        <div class="footer">Allenatore: REC</div>
+    </div>
+</body>
+</html>
