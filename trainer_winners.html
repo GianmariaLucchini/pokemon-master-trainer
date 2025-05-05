@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allenatori Vincenti</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            border: 3px solid white;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px white;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFD700; /* Giallo */
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle; /* Centra verticalmente il contenuto */
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        .trainer-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Per un'icona a cerchio */
+            object-fit: cover; /* Per non deformare l'immagine */
+            vertical-align: middle; /* Allinea verticalmente l'immagine al testo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Allenatori Vincenti</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Allenatore</th>
+                    <th>Vittorie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="Allenatore.png" alt="REC" class="trainer-icon"> REC</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><img src="Allenatore.png" alt="L10" class="trainer-icon"> L10</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><img src="Allenatore.png" alt="KRM" class="trainer-icon"> KRM</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="Allenatore.png" alt="SPA" class="trainer-icon"> SPA</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="Allenatore.png" alt="TOD" class="trainer-icon"> TOD</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
