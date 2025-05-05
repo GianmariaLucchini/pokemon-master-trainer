@@ -16,6 +16,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            overflow-x: hidden; /* Impedisce lo scorrimento orizzontale sul body */
         }
 
         .hall-of-fame {
@@ -44,17 +45,21 @@
             border: 2px solid white;
             padding: 10px;
             text-align: center;
+            box-sizing: border-box; /* Importante per il padding all'interno della larghezza */
         }
 
         .pokemon img {
             width: 80px;
             height: 80px;
             image-rendering: pixelated;
+            max-width: 100%; /* Assicura che l'immagine non sia più grande del suo contenitore */
+            height: auto;
         }
 
         .pokemon-name {
             margin-top: 10px;
             font-size: 1.2em;
+            word-break: break-word; /* Evita che nomi lunghi sborderino */
         }
 
         .pokemon-level {
@@ -76,6 +81,32 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Modifiche per schermi più piccoli */
+        @media (max-width: 600px) {
+            .hall-of-fame {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .pokemon-list {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adatta le colonne su schermi piccoli */
+                gap: 10px;
+            }
+
+            .pokemon img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .pokemon-name {
+                font-size: 1em;
+            }
+
+            .pokemon-level {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
